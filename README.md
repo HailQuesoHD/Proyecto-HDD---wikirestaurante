@@ -2,7 +2,7 @@
 
 
 
-\## 📌 Propósito del proyecto
+\##  Propósito del proyecto
 
 
 
@@ -14,17 +14,17 @@ El objetivo principal es simular un flujo de trabajo real de desarrollo colabora
 
 
 
-\## 👥 Integrantes del equipo
+\##  Integrantes del equipo
 
 
 
-\- Nicolás
+\- Nicolás Lavado
 
-\- Carla
+\- David Moya
 
 
 
-\## 🧱 Estructura del proyecto
+\##  Estructura del proyecto
 
 
 
@@ -44,7 +44,7 @@ El objetivo principal es simular un flujo de trabajo real de desarrollo colabora
 
 
 
-\## ⚙️ Tecnologías usadas
+\##  Tecnologías usadas
 
 
 
@@ -58,7 +58,7 @@ El objetivo principal es simular un flujo de trabajo real de desarrollo colabora
 
 
 
-\## 🚀 Objetivos prácticos
+\## Objetivos prácticos
 
 
 
