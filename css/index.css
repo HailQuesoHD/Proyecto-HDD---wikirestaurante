@@ -527,5 +527,5 @@ footer {
     margin-top: 10px;
     font-size: 14px;
     width: 20%;
-    max-width: 170px;
+    max-width: 150px; /*og:170px*/
 }
