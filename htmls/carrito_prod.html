@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Wikirestaurante de Quesos</title>
+    <link rel="stylesheet" href="../css/productos.css">
+    <link rel="icon" href="../imagenes/queso_logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2 class="sidebar-titulo">Explora!</h2>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="enciclopedia.html">Enciclopedia</a></li>
+                    <li><a href="recetas.html">Recetas</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="contactenos.html">Contáctenos</a></li>
+                </ul>
+                <div class="imagen_sidebar">
+                    <img src="../imagenes/queso_logo.png" alt="">
+                </div>
+            </nav>
+        </div>
+
+
+        <!-- Main Content -->
+        <div class="main-content">
+
+            <div class="contenedor-transparente cont-prodinicio">
+                <h1>Carrito de Compras</h1>
+
+                <div class="img_carrito">
+                    <img src="../imagenes/carro_de_compras.png" alt="">
+                </div>
+                
+                <div class="carrito" id="carrito"></div>
+                <button onclick="procederCompra()" class="btn-carrito">Proceder con la compra</button>
+
+                <script>
+                    // Cargar los productos desde localStorage
+                    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+                    const carritoDiv = document.getElementById('carrito');
+
+                    // Mostrar los productos
+                    carrito.forEach((producto, index) => {
+                        carritoDiv.innerHTML += `
+                <div class="prod_carroCompras">
+                    <p>${producto.nombre}  S/.${producto.precio.toFixed(2)}</p>
+                    <button onclick="eliminarProducto(${index})" class="btn-eliminar">Eliminar</button>
+                </div>
+            `;
+                    });
+
+                    // Eliminar un producto
+                    function eliminarProducto(index) {
+                        carrito.splice(index, 1); // Elimina del array
+                        localStorage.setItem('carrito', JSON.stringify(carrito)); // Actualiza localStorage
+                        location.reload(); // Recarga la página
+                    }
+
+                    // Proceder con la compra
+                    function procederCompra() {
+                        alert('Compra realizada con éxito.');
+                        localStorage.removeItem('carrito'); // Limpia el carrito
+                        location.reload(); // Recarga la página
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
