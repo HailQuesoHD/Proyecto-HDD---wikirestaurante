@@ -66,5 +66,30 @@ Este archivo documenta los cambios importantes realizados en el proyecto de form
 
 \- Primeros commits de prueba para confirmar configuración de Git
 
+#Cambios David
+cambio de Margin en Index.css
+
+Cambios en Index.css para ajustar los márgenes.
+
+Commit: 62e7a4ecd578c84b6dc33994648d913534535e87
+
+Carpetas Rama_David
+
+Se crearon carpetas para la rama Rama_David.
+
+Commit: e30acf3059a86e6d731a2f1b65333138329bf83b
+
+Pruerba Rama David
+
+Se realizó una prueba en la rama Rama_David.
+
+Commit: df1b8d46c9bfd7c3363e15b8d425da9f664fce09
+
+Edicion README.md
+
+Se editó el archivo README.md.
+
+Commit: 9a95222bc98845ea5b37d85fd10b8018639beb95
+
 
 
